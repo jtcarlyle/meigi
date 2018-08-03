@@ -1,3 +1,44 @@
-div {
+.page-container{
+	display: flex;
 	writing-mode: vertical-rl;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+	/*width: 1200px;*/
+	/*height: 800px;*/
+}
+.line-container, .half-line,
+.def-line-container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.half-line{
+	padding: 10px;
+	height: 50%;
+}
+.seal-head{
+	height: 20%;
+}
+.seal-head, .head-word, .full-line{
+	font-size: 33px;
+}
+.zhengwen{
+	font-size: 20px;
+	/*display: inline-flex;*/
+}
+.def-container{
+	/*flex-basis: 45%;*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.comment{
+	font-size: 12px;
+	/*display: inline-flex;*/
+	display: inline-block;
 }

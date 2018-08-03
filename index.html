@@ -2,15 +2,114 @@
 <html>
 <head>
 	<title>Meigi Homepage</title>
+	<script 
+	src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+	type="text/javascript"></script>
+	<!-- <script src ="https://raw.githubusercontent.com/jtcarlyle/PrettyBreak/master/jquery.pretty-break.js" type="text/javascript"></script> -->
 	<meta http-euiv="content-type" content="text/html"; charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 <body>
-	<h2>
-		篆隸萬象名義
-	</h2>
-	<div>
-		一於逸反少也初也同也弌古文
+	<div class="page-container">
+		<div class="line-container">
+			<div class="full-line">
+				篆隸萬象名義卷第一
+			</div>
+		</div>
+		<div class="line-container">
+			<div class="full-line">
+				東大寺沙門大僧都空海撰
+			</div>
+		</div>
+		<div class="line-container">
+			<div class="full-line">
+				一部第一
+			</div>
+			<div class="full-line">
+				上部第二
+			</div>
+			<div class="full-line">
+				示部第三
+			</div>
+		</div>
+		<div class="line-container">
+			<div class="full-line">
+				一部第一凡八字
+			</div>
+		</div>
+		<div class="line-container">
+			<div class="half-line">
+				<div class="seal-head">
+					一
+				</div>
+				<div class="head-word">
+					一
+				</div>
+				<div class="def-container">
+					<div class="def-line-container">
+						<div class="zhengwen">於逸反少也初也</div>
+					</div>
+					<div class="def-line-container">
+						<div class="zhengwen">同也弌</div>
+						<div class="comment-container">
+							<div class="comment">古</div>
+							<div class="comment">文</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="half-line">
+				<div class="seal-head">
+					天
+				</div>
+				<div class="head-word">
+					天
+				</div>
+				<div class="def-container">
+					<div class="zhengwen">泰堅反顛也顯也君也𠀡
+						<div class="comment">古文古文古文古文</div>
+						𠀘
+						<div class="comment">古文</div>
+						兲
+						<div class="comment">古文</div>
+						𠕹
+						<div class="comment">古文</div>
+					</div>
+			<!-- 		<div class="comment">古文</div>
+					<div class="zhengwen">𠀘</div>
+					<div class="comment">古文</div>
+					<div class="zhengwen">兲</div>
+					<div class="comment">古文</div>
+					<div class="zhengwen">𠕹</div>
+					<div class="comment">古文</div> -->
+				</div>				
+			</div>
+		</div>
 	</div>
+	<script type="text/javascript">
+		// var comments = document.getElementsByClassName("full-line");
+		// console.log(comments.length);
+		// for (var i = comments.length - 1; i >= 0; i--) {
+		// 	console.log(comments[i].offsetHeight);
+		// 	comments[i].offsetHeight = comments[i].offsetHeight / 2;
+		// 	// comments[i].style.width = comments[i].style.width / 2;
+		// }
+		
+		// $(".def-container").each(function(){
+		// 	console.log($(this).height());
+		// 	$(this).height($(this).height() * 0.60);
+		// });
+
+		// $(".comment").each(function(){
+		// 	console.log($(this).height());
+		// 	$(this).height($(this).height() * 0.60);
+		// });
+
+		$(".comment").each(function(){
+			console.log($(this).width());
+			$(this).width($(this).width() * 0.60);
+		});
+	</script>
 </body>
 </html>
+
